@@ -1,3 +1,8 @@
+```mermaid
+erDiagram
+    USERS ||--o{ TASKS : owns
+    TASKS ||--o{ TASK_TAGS : has
+    TAGS  ||--o{ TASK_TAGS : labels
 
     USERS {
         int id PK
@@ -24,3 +29,4 @@
         int task_id PK, FK
         int tag_id PK, FK
     }
+```
